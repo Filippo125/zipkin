@@ -168,7 +168,16 @@
                                 },
                                 "index": {
                                     "type": "string"
-                                }
+                                },
+                              "sslNoVerify": {
+                                "type": "boolean"
+                              },
+                              "username": {
+                                "type": "string"
+                              },
+                              "password": {
+                                "type": "string"
+                              }
                             },
                             "required": ["hosts", "index"]
                         },
@@ -190,7 +199,10 @@
                             "required": ["elasticsearch"]
                         }
                     ]
-                }
+                },
+		"extraEnv": {
+			"type": "object"
+		}
             }
         }
     }
